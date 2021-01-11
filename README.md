@@ -7,6 +7,7 @@ Turn a fasta-format MSA into one vcf per sequence.
 ## Install
 `pip install git+https://github.com/connor-lab/msa2vcf.git`
 
+## Notes
 VCF position is based on reference position.
 
 IUPAC bases:
