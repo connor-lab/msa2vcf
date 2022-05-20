@@ -156,7 +156,8 @@ def deconvolute_IUPAC(var):
         no_iupac = iupac_to_base(base)
         if isinstance(no_iupac, list):
             num_alts = len(no_iupac)
-            no_iupac.remove(var[1])
+            if var[1] in no_iupac:
+                no_iupac.remove(var[1])
             var[3] = ','.join(no_iupac)
 
     var.append(round(1 / num_alts, 2))
